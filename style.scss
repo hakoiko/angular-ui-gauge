@@ -1,0 +1,9 @@
+.gauge	{
+	$size: 4px;
+	display: block; height: $size; border-radius: $size; font-size: 0;
+	span	{
+		display: inline-block; height: $size; border-radius: $size; position: relative; transition: .2s linear width; padding-right: $size; margin-right: -$size;
+		&:first-of-type	{ border-radius: $size; }
+		&:last-of-type	{ padding-right: 0; }
+	}
+}
